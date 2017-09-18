@@ -20,9 +20,9 @@ import com.dinstone.jrpc.protocol.Response;
 
 public interface Acceptance {
 
-    public abstract Response handle(Request request);
+    Response handle(Request request);
 
-    public abstract Acceptance bind();
+    Acceptance bind();
 
-    public abstract void destroy();
+    void destroy();
 }
